@@ -6,9 +6,7 @@ export const user = {
     email: 'anmoldaim@gmail.com',
     imageUrl:{profileImg},
   }
-  export const navigation = [
-    { name: 'Dashboard', href: '/dashboard', current: true }
-  ]
+ 
   export const userNavigation = [
     { name: 'Your Profile', href: '#' },
     { name: 'Settings', href: '#' },

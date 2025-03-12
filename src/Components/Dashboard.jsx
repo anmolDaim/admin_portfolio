@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { PencilSquareIcon, TrashIcon } from '@heroicons/react/24/outline';
 import { db, auth } from '../firebaseConfig';
-import { navigation } from "../Constants"
 import { collection, addDoc, getDocs, doc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { onAuthStateChanged } from 'firebase/auth';
 
@@ -113,7 +112,8 @@ const Dashboard = () => {
                                
                                 <div className="hidden md:block">
                                     <div className="ml-10 flex items-baseline space-x-4">
-                                        {navigation.map((item) => (
+                                        <h2 className='text-2xl font-bold '>Welcome you Admin</h2>
+                                        {/* {navigation.map((item) => (
                                             <a
                                                 key={item.name}
                                                 href={item.href}
@@ -125,7 +125,7 @@ const Dashboard = () => {
                                             >
                                                 {item.name}
                                             </a>
-                                        ))}
+                                        ))} */}
                                     </div>
                                 </div>
                             </div>
