@@ -25,7 +25,7 @@ const LoginPage = () => {
 
       if (adminSnap.exists() && adminSnap.data().role === "admin") {
         // Redirect to Dashboard if admin
-        navigate("/");
+        navigate("/dashboard");
       } else {
         setError("Access Denied: You are not an admin!");
       }

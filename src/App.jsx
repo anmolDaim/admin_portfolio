@@ -9,8 +9,14 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+       {/* Redirect from "/" to "/login" */}
+       <Route path="/" element={<Navigate to="/login" />} />
+        
+        {/* Login Page */}
         <Route path="/login" element={<LoginPage />} />
+
+        {/* Dashboard (should only be accessible after login) */}
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   )
