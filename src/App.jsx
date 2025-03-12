@@ -1,7 +1,7 @@
 import React from "react"
-import Login from "./Components/login"
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "./Components/Dashboard";
+import Dashboard from "../src/Components/Dashboard";
+import LoginPage from "../src/Components/LoginPage";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   )
