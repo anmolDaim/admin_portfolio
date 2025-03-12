@@ -7,8 +7,7 @@ export const user = {
     imageUrl:{profileImg},
   }
   export const navigation = [
-    { name: 'Dashboard', href: '/dashboard', current: true },
-    { name: 'Logout', href: '/login', current: false }
+    { name: 'Dashboard', href: '/dashboard', current: true }
   ]
   export const userNavigation = [
     { name: 'Your Profile', href: '#' },
